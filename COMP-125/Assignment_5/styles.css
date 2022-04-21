@@ -1,0 +1,59 @@
+body {
+    font-family: 'Creepster';
+    color: white;
+    background-image: url("web.jpg");
+}
+
+#allPage {
+    width: 800px;
+    font-family: 'Creepster';
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    color: rgb(31,0,60,255);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#buttons {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+
+h1, h6 {
+    font-family: 'Creepster';
+    font-variant: small-caps;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+header {
+    padding: 40px;
+    text-align: center;
+    background-color: rgb(31,0,60,255);
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+button{
+    border-radius: 5px;
+    font-family: 'Creepster';
+    border-color: rgb(31,0,60,255);
+    font-variant: small-caps;
+    text-transform: capitalize;
+    background-color: rgb(221, 185, 228);
+}

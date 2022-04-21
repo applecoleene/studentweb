@@ -1,0 +1,46 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    background-color: lavender;
+    background-attachment: fixed;
+}
+
+#allPage {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    border: medium solid rebeccapurple;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    opacity: 0.90;
+    color: rebeccapurple;
+}
+
+h1, h2, h3 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    color: rebeccapurple;
+}
+
+#header {
+    background-color: #008000;
+    border-radius: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid #4B0082;
+}

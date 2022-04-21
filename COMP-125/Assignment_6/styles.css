@@ -1,0 +1,79 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: black;
+}
+
+#allPage {
+    width: 800px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    box-shadow: 5px 5px 5px white;
+}
+
+p,
+a {
+    text-align: center;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    color: white;
+}
+
+h1,
+h6 {
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+}
+
+header {
+    padding: 40px;
+    text-align: center;
+    background-color: rgb(31, 0, 60, 255);
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+button {
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    border-color: rgb(31, 0, 60, 255);
+    font-variant: small-caps;
+    text-transform: capitalize;
+    background-color: white;
+}
+
+#buttons {
+    text-align: center;
+}
+
+img {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+#header {
+    color: black;
+}

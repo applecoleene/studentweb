@@ -1,0 +1,21 @@
+[{
+        "image": "IMG_1.JPG",
+        "interval": 5000
+    },
+    {
+        "image": "IMG_2.JPG",
+        "interval": 5000
+    },
+    {
+        "image": "IMG_3.JPG",
+        "interval": 5000
+    },
+    {
+        "image": "IMG_4.JPG",
+        "interval": 5000
+    },
+    {
+        "image": "IMG_5.JPG",
+        "interval": 5000
+    }
+]

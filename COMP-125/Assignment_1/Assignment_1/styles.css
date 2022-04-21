@@ -1,0 +1,57 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    background-color: #000000;
+    background-attachment: fixed;
+}
+
+legend {
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    color: #3A5F38;
+}
+
+#allPage {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    border: medium solid #DAECB3;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #D8EAB2;
+    opacity: 0.90;
+    color: #3A5F38;
+}
+
+h1, h3 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    color: #3A5F38;
+}
+
+#header {
+    background-color: #008000;
+    border-radius: 10px;
+}
+
+.field {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+fieldset {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #808080;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}

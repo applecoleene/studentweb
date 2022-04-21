@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <div id="allPage">
+        <header>
+            <h1>Member Registration</h1>
+        </header>
+        <h2>Please complete all the fields below:</h2>
+        <fieldset>
+            <div id="profile">
+                <form id="registerForm">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" /><br />
+                    <p id="fnameError" class="errorMessage"></p>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" /><br />
+                    <p id="lnameError" class="errorMessage"></p>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" /><br />
+                    <p id="addressError" class="errorMessage"></p>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" /><br />
+                    <p id="cityError" class="errorMessage"></p>
+                    <label for="pcode">Postal Code:</label>
+                    <input type="text" id="pcode" /><br />
+                    <p id="pcodeError" class="errorMessage"></p>
+                    <label for="province">Province:</label>
+                    <select id="province">
+                        <option value="AB">AB</option>
+                        <option value="BC">BC</option>
+                        <option value="MN">MN</option>
+                        <option value="NB">NB</option>
+                        <option value="NL">NL</option>
+                        <option value="NT">NT</option>
+                        <option value="NS">NS</option>
+                        <option value="NU">NU</option>
+                        <option value="ON">ON</option>
+                        <option value="PE">PE</option>
+                        <option value="QC">QC</option>
+                        <option value="SK">SK</option>
+                        <option value="YK">YK</option>
+                    </select><br />
+                    <p id="provinceError" class="errorMessage"></p>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" /><br />
+                    <p id="ageError" class="errorMessage"></p>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" /><br />
+                    <p id="passwordError" class="errorMessage"></p>
+                    <label for="confirm">Confirm:</label>
+                    <input type="password" id="confirm" /><br />
+                    <p id="confirmError" class="errorMessage"></p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" /><br />
+                    <p id="emailError" class="errorMessage"></p>
+                    <button type="button" id="submit">Register Now</button>
+                    <button type="button" id="clear">Clear Form</button><br />
+                </form>
+            </div>
+        </fieldset>
+        <footer>
+        	<h6><a href="../../index.html">Return to Index</a></h6>
+            <h6>&copy;&nbsp;Copyright Apple Coleene Duquinal - Assignment 04 - COMP125</h6>
+        </footer>
+    </div>
+    <script src="assignment4.js"></script>
+</body>
+
+</html>

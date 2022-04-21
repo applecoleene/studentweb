@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>BMR Calculator</title>
+</head>
+<body>
+    <div id="allPage">
+        <h1><center>Basal Metabolic Rate (BMR) Calculator<br />Assignment 1</center></h1>
+        <hr style="border: 2px solid darkgreen; width:800px;">
+        <table>
+            <form>
+                <td>
+                    <label for="metric" id="metric">
+                        <h2>
+                            <input type="radio" id="metricop" name="unit" onclick="javascript: unitChoice();" />
+                            Metric BMR Calculator
+                        </h2>
+                    </label>
+                    <div id="metricChoice" style="visibility: hidden">
+                        <fieldset id="userinfo">
+                            <legend><span>User Information</span></legend>
+                            <label for="age">Age<input type="number" id="age" name="age" /></label><br />
+                            <label>Gender</label>
+                            <select id="gender" name="gender">
+                                <option value="0"></option>
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                            </select><br />
+                            <b><legend>Height</legend></b>
+                            <label for="cm">Centimeters<input type="number" id="cm" name="cm" /></label>
+                            <b><legend>Weight</legend></b>
+                            <label for="kg">Kilogram (kg)<input type="number" id="kg" name="kg" /></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend id="levelPhy"><span>Physical Activyty Level</span></legend>
+                            <label for="firstOp"><input type="radio" id="firstOp" name="phyOp" />Sedentary Activity Level (Little or no exercise)</label><br />
+                            <label for="secOp"><input type="radio" id="secOp" name="phyOp" />Light Physical Activity Level (1-3 days exercise per week)</label><br />
+                            <label for="thirdOp"><input type="radio" id="thirdOp" name="phyOp" />Moderate Physical Activity Level (3-5 days exercise per week)</label><br />
+                            <label for="fourthOp"><input type="radio" id="fourthOp" name="phyOp" />Very Active Physical Activity Level (6-7 days exercise per week)</label><br />
+                            <label for="fifthOp"><input type="radio" id="fifthOp" name="phyOp" />Vigorous Physical Activity Level (7 or more exercise per week)</label>
+                        </fieldset>
+                        <br /><input type="submit" id="submitMet" value="Calculate" />
+                    </div><br /><br />
+                </td>
+                <td>
+                    <label for="imperial" id="imperial">
+                        <h2>
+                            <input type="radio" id="imperialop" name="unit" onclick="javascript: unitChoice();" />
+                            Imperial BMR Calculator
+                        </h2>
+                    </label>
+                    <div id="imperialChoice" style="visibility: hidden">
+                        <fieldset id="userinfo">
+                            <legend><span>User Information</span></legend>
+                            <label for="ageImp">Age<input type="number" id="ageImp" name="ageImp" /></label><br />
+                            <label>Gender</label>
+                            <select id="genderImp" name="genderImp">
+                                <option value="0"></option>
+                                <option value="femaleImp">Female</option>
+                                <option value="maleImp">Male</option>
+                            </select><br />
+                            <b><legend>Height</legend></b>
+                            <label for="feetImp">Feet<input type="number" id="feetImp" name="feetImp" /></label><br />
+                            <label for="inchesImp">Inches<input type="number" id="inchesImp" name="inchesImp" /></label>
+                            <b><legend>Weight</legend></b>
+                            <label for="stonesImp">Stones<input type="number" id="stonesImp" name="stonesImp" /></label><br />
+                            <label for="poundsImp">Pounds<input type="number" id="poundsImp" name="poundsImp" /></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend id="levelPhyImp"><span>Physical Activyty Level</span></legend>
+                            <label for="firstOpImp"><input type="radio" id="firstOpImp" name="phyOpImp" />Sedentary Activity Level (Little or no exercise)</label><br />
+                            <label for="secOpImp"><input type="radio" id="secOpImp" name="phyOpImp" />Light Physical Activity Level (1-3 days exercise per week)</label><br />
+                            <label for="thirdOpImp"><input type="radio" id="thirdOpImp" name="phyOpImp" />Moderate Physical Activity Level (3-5 days exercise per week)</label><br />
+                            <label for="fourthOpImp"><input type="radio" id="fourthOpImp" name="phyOpImp" />Very Active Physical Activity Level (6-7 days exercise per week)</label><br />
+                            <label for="fifthOpImp"><input type="radio" id="fifthOpImp" name="phyOpImp" />Vigorous Physical Activity Level (7 or more exercise per week)</label>
+                        </fieldset>
+                        <br /><input type="submit" id="submitImp" value="Calculate" />
+                    </div>
+                </td>
+            </form>
+        </table>
+        <h2>Calculations used:</h2>
+        <h3><a href="https://en.wikipedia.org/wiki/Harris%E2%80%93Benedict_equation">The Original Harris-Benedict Equation</a></h3><br />
+        <h3>Men (Metric): BMR = 66.5 + ( 13.75 × weight in kg ) + ( 5.003 × height in cm ) – ( 6.755 × age in years )</h3><br />
+        <h3>Men (Imperial): BMR = 66 + ( 6.2 × weight in pounds ) + ( 12.7 × height in inches ) – ( 6.76 × age in years )</h3><br />
+        <h3>Women (Metric): BMR = 655 + ( 9.563 × weight in kg ) + ( 1.850 × height in cm ) – ( 4.676 × age in years )</h3><br />
+        <h3>Women (Imperial): BMR = 655 + ( 4.35 × weight in pounds ) + ( 4.7 × height in inches ) - ( 4.7 × age in years )</h3><br /><br />
+        <p><center>~~~~~~~~~~~~</center></p><br />
+        <h3><a href="https://www.thecalculatorsite.com/health/bmr-calculator.php">Calorie Intake per day</a></h3><br />
+        <h3>Sedentary Activity Level (Little or no exercise): Calorie Intake per day = BMR x 1.2</h3><br />
+        <h3>Light Physical Activity Level (1-3 days exercise per week): Calorie Intake per day = BMR x 1.375</h3><br />
+        <h3>Moderate Physical Activity Level (3-5 days exercise per week): Calorie Intake per day = BMR x 1.55</h3><br />
+        <h3>Very Active Physical Activity Level (6-7 days exercise per week): Calorie Intake per day = BMR x 1.725</h3><br />
+        <h3>Vigorous Physical Activity Level (7 or more exercise per week): Calorie Intake per day = BMR x 1.9</h3><br />
+        <center><h6><a href="../../../index.html">Return to Index</a></h6>
+        <h6 id="copyright">&copy;&nbsp;Copyright Apple Coleene Duquinal - Assignment 1 - COMP125</h6></center>
+        <script src="assignment1.js"></script>
+    </div>
+</body>
+</html>
